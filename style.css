@@ -1,0 +1,70 @@
+* {
+    font-family: 'Zilla Slab', serif;
+}
+
+header {
+    background-color:#c4e2e2;
+}
+
+.nav-link {
+    font-size:1.15rem;
+}
+
+.greeting h1{
+    font-size:3rem
+}
+
+.greeting p{
+    font-size:1.3rem;
+}
+
+.project {
+    margin-top: -5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.card-image {
+    position: relative;
+  }
+  
+  .image-overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hover-text {
+     color: white;
+     font-size: 8rem;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     -webkit-transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%);
+     text-align: center;
+    }
+  
+  .card:hover .image-overlay {
+      opacity: 1;
+    }
+
+    .contact {
+        background-color:#c4e2e2;
+        font-size:3rem;
+    }
+
+
+@media (min-width: 1400px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1140px !important;
+    }
+}
