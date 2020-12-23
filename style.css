@@ -55,6 +55,7 @@ header {
   
   .card:hover .image-overlay {
       opacity: 1;
+      cursor: pointer;
     }
 
     .contact {
@@ -62,9 +63,54 @@ header {
         font-size:3rem;
     }
 
+    .button {
+        background-color: #6fa7a7;
+        border: none;
+        color: white;
+        padding: 15px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        cursor: pointer;
+        font-size:2rem;
+        border-radius:50px;
+        float:right;
+      }
+      .proj_button {
+        background-color: #6fa7a7;
+        border: none;
+        color: white;
+        padding: 2px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        cursor: pointer;
+        font-size:1.5rem;
+        border-radius:50px;
+        float:right;
+      }
+
+      .copyright{
+          float:left;
+      }
+
+      .love{
+        float:right;
+    }
+
 
 @media (min-width: 1400px){
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     max-width: 1140px !important;
     }
+}
+
+@media (max-width: 990px){
+    .button {
+        float: left;
+      }
 }
