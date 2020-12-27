@@ -91,7 +91,6 @@ header {
         cursor: pointer;
         font-size:1.5rem;
         border-radius:50px;
-        float:right;
       }
 
       .copyright{
@@ -101,7 +100,6 @@ header {
       .love{
         float:right;
     }
-
 
 @media (min-width: 1400px){
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
