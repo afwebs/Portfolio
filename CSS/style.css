@@ -12,6 +12,7 @@ header {
   color: #6B6E70;
 }
 
+
 .greeting h1 {
   font-size: 3em;
   color: rgb(231, 231, 231);
@@ -361,6 +362,17 @@ header {
 }
 .slick-arrow.slick-hidden {
   display: none;
+}
+
+.dev-icons {
+  list-style: none;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.software-skill-inline {
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .copyright {

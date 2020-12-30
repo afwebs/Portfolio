@@ -4,17 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;700&display=swap" rel="stylesheet">
-    <title>Adrian Fernandez</title>
+    <script src="https://kit.fontawesome.com/68899dcfcd.js" crossorigin="anonymous"></script>
+    <title>About</title>
 </head>
 
 <body>
+    <!--Header-->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
                 <a class="navbar-brand" href="index.html">LOGO</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -24,41 +27,98 @@
                 <div class="navbar-collapse justify-content-end collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="/about.html">About</a>
+                            <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/portfolio.html">Portfolio</a>
+                            <a class="nav-link" href="">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/contact.html">Contact</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    <!--Main Content-->
+    <main>
+        <!--About Section-->
+        <section class="about-me mt-5 mb-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-7 mb-5">
+                        <img src="https://picsum.photos/600" alt="..." width="100%">
+                    </div>
+                    <div class="col-md-12 col-lg-5">
+                        <div class="mb-5">
+                            <h3>Hi, My name is Adrian Fernandez</h3>
+                            <hr>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem consectetur aperiam libero, optio harum ipsam dolorum nulla. Ullam rerum, ab suscipit dicta corporis repellendus! Nesciunt numquam inventore unde mollitia dolores.</p>
+                        </div>
+                        <div class="mb-5">
+                            <h3>Facts About Me</h3>
+                            <hr>
+                            <ul>
+                                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni repellendus consectetur</li>
+                                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni repellendus consectetur</li>
+                                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni repellendus consectetur</li>
+                                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni repellendus consectetur</li>
+                            </ul>
+                        </div>
+                        <div class="mb-5">
+                            <h3>Skill Set</h3>
+                            <hr>
+                            <ul class="dev-icons">
+                                <li class="software-skill-inline" name="html-5"><i class="fab fa-html5"></i>
+                                    <p>HTML5</p>
+                                </li>
+                                <li class="software-skill-inline" name="css3"><i class="fab fa-css3-alt"></i>
+                                    <p>CSS3</p>
+                                </li>
+                                <li class="software-skill-inline" name="JavaScript"><i class="fab fa-js"></i>
+                                    <p>JavaScript</p>
+                                </li>
+                                <li class="software-skill-inline" name="reactjs"><i class="fab fa-react"></i>
+                                    <p>Reactjs</p>
+                                </li>
+                                <li class="software-skill-inline" name="wordpress"><i class="fab fa-wordpress"></i>
+                                    <p>WordPress</p>
+                                </li>
+                                <li class="software-skill-inline" name="python"><i class="fab fa-python"></i>
+                                    <p>Python</p>
+                                </li>
+                                <li class="software-skill-inline" name="github"><i class="fas fa-code-branch"></i>
+                                    <p>Github</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mb-5">
+                            <h3>Social Media</h3>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <!--Footer-->
     <footer class="mt-5 pb-2">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <div class="copyright">
-                        <p>©2020 adrianfernandez.me All Rights Reserved.</p>
+                        <p>©2020 <a href="#">adrianfernandez.me</a> | All Rights Reserved.</p>
                     </div>
                     <div class="love">
-                        <p>Made with *Heart* in Miami, FL</p>
+                        <p>Made with <span class="heart">❤</span> in Miami</p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
-        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
-        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
-        crossorigin="anonymous"></script>
+    <!--Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 
 </html>
