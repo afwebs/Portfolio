@@ -176,7 +176,7 @@ header {
   --pex: -24px;
 }
 
-.button {
+.button, .contact-button {
   border: none;
   outline: none;
   cursor: pointer;
@@ -370,9 +370,15 @@ header {
   text-align: center;
 }
 
-.software-skill-inline {
+.software-skill-inline, .social-icons-inline {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 30px;
+}
+
+.social-icons{
+  list-style: none;
+  font-size: 1.8em;
+  text-align: center;
 }
 
 .copyright {
@@ -420,5 +426,11 @@ header {
   }
   .slider {
     display: none;
+  }
+  .dev-icons p {
+    display: none;
+  }
+  .social-icons {
+    font-size: 1.5em;
   }
 }
