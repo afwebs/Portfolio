@@ -381,6 +381,14 @@ header {
   text-align: center;
 }
 
+hr {
+  width: 30%;
+  margin-left: auto !important; 
+  margin-right: auto !important;
+  height:20px;
+  border: 2px solid !important;
+}
+
 .copyright {
   float: left;
 }
