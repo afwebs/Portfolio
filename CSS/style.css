@@ -3,6 +3,15 @@
   color: #6B6E70;
 }
 
+#main-wrapper {
+  position: relative;
+  min-height: 75vh;
+}
+
+#content-wrapper {
+  padding-bottom: 2.5rem;
+}
+
 header {
   background-color: #222629;
 }
@@ -189,6 +198,7 @@ header {
   background: #61892F;
   color: white;
 }
+
 .button:hover {
   transform: scale(1.2);
   transition: 0.3s;
@@ -205,9 +215,11 @@ header {
   position: relative;
   z-index: 2;
 }
+
 .card {
   border: 6none;
 }
+
 .card-image {
   position: relative;
 }
@@ -308,16 +320,19 @@ header {
   left: 0;
   display: block;
 }
+
 .slick-track:before,
 .slick-track:after
 {
   display: table;
   content: '';
 }
+
 .slick-track:after
 {
   clear: both;
 }
+
 .slick-loading .slick-track
 {
   visibility: hidden;
@@ -372,7 +387,7 @@ header {
 
 .software-skill-inline, .social-icons-inline {
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 40px;
 }
 
 .social-icons{
@@ -387,6 +402,16 @@ hr {
   margin-right: auto !important;
   height:20px;
   border: 2px solid !important;
+}
+
+.about-me {
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  width:100%;
+  height: 2.5rem;
 }
 
 .copyright {
@@ -430,7 +455,7 @@ hr {
     float: none;
   }
   .love {
-    float: none;
+    float: none;zzz
   }
   .slider {
     display: none;
@@ -440,5 +465,9 @@ hr {
   }
   .social-icons {
     font-size: 1.5em;
+  }
+
+  .software-skill-inline {
+    margin-bottom: 20px;
   }
 }
