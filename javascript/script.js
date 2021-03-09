@@ -1,3 +1,4 @@
+/*--------------Slider--------------*/
 $(document).ready(function(){
     $('.dev-slider').slick({
       slidesToShow: 4,

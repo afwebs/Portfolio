@@ -1,8 +1,9 @@
 * {
-  font-family: 'Zilla Slab', serif;
-  color: #6B6E70;
+  font-family: "Zilla Slab", serif;
+  color: #6b6e70;
 }
 
+/* ------------------- Wrappers -------------------- */
 #main-wrapper {
   position: relative;
   min-height: 75vh;
@@ -12,15 +13,15 @@
   padding-bottom: 2.5rem;
 }
 
+/* ------------------- Header / Nav -------------------- */
 header {
   background-color: #222629;
 }
 
 .nav-link {
   font-size: 1.1em;
-  color: #6B6E70;
+  color: #6b6e70;
 }
-
 
 .greeting h1 {
   font-size: 3em;
@@ -36,10 +37,10 @@ header {
   font-size: 1.2em;
   color: white;
 }
-
+/* ------------------- Resume Button -------------------- */
 .resumeBtn {
   --color: white;
-  --background: #61892F;
+  --background: #61892f;
   --background-hover: #4b6b24;
   --background-left: #324717;
   --folder: #f3e9cb;
@@ -63,7 +64,7 @@ header {
   background: var(--bg, var(--background));
 }
 
-.resumeBtn>div {
+.resumeBtn > div {
   top: 0;
   left: 0;
   bottom: 0;
@@ -74,7 +75,7 @@ header {
   background: var(--background-left);
 }
 
-.resumeBtn>div .folder {
+.resumeBtn > div .folder {
   width: 23px;
   height: 27px;
   position: absolute;
@@ -82,7 +83,7 @@ header {
   top: 13px;
 }
 
-.resumeBtn>div .folder .top {
+.resumeBtn > div .folder .top {
   left: 0;
   top: 0;
   z-index: 2;
@@ -91,7 +92,7 @@ header {
   transition: transform 0.4s ease var(--fd, 0.3s);
 }
 
-.resumeBtn>div .folder .top svg {
+.resumeBtn > div .folder .top svg {
   width: 24px;
   height: 27px;
   display: block;
@@ -101,7 +102,9 @@ header {
   transform: perspective(120px) rotateY(var(--fr, 0deg));
 }
 
-.resumeBtn>div .folder:before, .resumeBtn>div .folder:after, .resumeBtn>div .folder .paper {
+.resumeBtn > div .folder:before,
+.resumeBtn > div .folder:after,
+.resumeBtn > div .folder .paper {
   content: "";
   position: absolute;
   left: var(--l, 0);
@@ -112,13 +115,15 @@ header {
   background: var(--b, var(--folder-inner));
 }
 
-.resumeBtn>div .folder:before {
-  box-shadow: 0 1.5px 3px var(--shadow), 0 2.5px 5px var(--shadow), 0 3.5px 7px var(--shadow);
+.resumeBtn > div .folder:before {
+  box-shadow: 0 1.5px 3px var(--shadow), 0 2.5px 5px var(--shadow),
+    0 3.5px 7px var(--shadow);
   transform: translateX(var(--fx, 0));
   transition: transform 0.4s ease var(--fd, 0.3s);
 }
 
-.resumeBtn>div .folder:after, .resumeBtn>div .folder .paper {
+.resumeBtn > div .folder:after,
+.resumeBtn > div .folder .paper {
   --l: 1px;
   --t: 1px;
   --w: 21px;
@@ -126,17 +131,18 @@ header {
   --b: var(--paper-behind);
 }
 
-.resumeBtn>div .folder:after {
+.resumeBtn > div .folder:after {
   transform: translate(var(--pbx, 0), var(--pby, 0));
   transition: transform 0.4s ease var(--pbd, 0s);
 }
 
-.resumeBtn>div .folder .paper {
+.resumeBtn > div .folder .paper {
   z-index: 1;
   --b: var(--paper);
 }
 
-.resumeBtn>div .folder .paper:before, .resumeBtn>div .folder .paper:after {
+.resumeBtn > div .folder .paper:before,
+.resumeBtn > div .folder .paper:after {
   content: "";
   width: var(--wp, 14px);
   height: 2px;
@@ -149,12 +155,13 @@ header {
   box-shadow: 0 12px 0 0 var(--paper-lines), 0 24px 0 0 var(--paper-lines);
 }
 
-.resumeBtn>div .folder .paper:after {
+.resumeBtn > div .folder .paper:after {
   --tp: 6px;
   --wp: 10px;
 }
 
-.resumeBtn:before, .resumeBtn:after {
+.resumeBtn:before,
+.resumeBtn:after {
   content: "";
   position: absolute;
   width: 10px;
@@ -185,7 +192,9 @@ header {
   --pex: -24px;
 }
 
-.button, .contact-button {
+/* ------------------- Buttons -------------------- */
+.button,
+.contact-button {
   border: none;
   outline: none;
   cursor: pointer;
@@ -195,7 +204,7 @@ header {
   line-height: 19px;
   transition: 0.3s;
   padding: 17px 29px 17px 29px;
-  background: #61892F;
+  background: #61892f;
   color: white;
 }
 
@@ -210,6 +219,7 @@ header {
   padding: 25px 30px 25px 30px;
 }
 
+/* ------------------- Project Cards -------------------- */
 .project {
   margin-top: -5rem;
   position: relative;
@@ -233,7 +243,7 @@ header {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
   background: rgba(0, 0, 0, 0.5);
 }
 
@@ -259,7 +269,7 @@ header {
   font-size: 3rem;
 }
 
-/* Slider */
+/* ------------------- Slider -------------------- */
 .slick-slide {
   margin: 50px 100px;
   font-size: 1.2em;
@@ -269,52 +279,46 @@ header {
   width: 70px;
 }
 
-.slick-slider
-{
+.slick-slider {
   position: relative;
   display: block;
   box-sizing: border-box;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-          user-select: none;
+  user-select: none;
   -webkit-touch-callout: none;
   -khtml-user-select: none;
   -ms-touch-action: pan-y;
-      touch-action: pan-y;
+  touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
 }
 
-.slick-list
-{
+.slick-list {
   position: relative;
   display: block;
   overflow: hidden;
   margin: 0;
   padding: 0;
 }
-.slick-list:focus
-{
+.slick-list:focus {
   outline: none;
 }
-.slick-list.dragging
-{
+.slick-list.dragging {
   cursor: pointer;
   cursor: hand;
 }
 
 .slick-slider .slick-track,
-.slick-slider .slick-list
-{
+.slick-slider .slick-list {
   -webkit-transform: translate3d(0, 0, 0);
-     -moz-transform: translate3d(0, 0, 0);
-      -ms-transform: translate3d(0, 0, 0);
-       -o-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
-.slick-track
-{
+.slick-track {
   position: relative;
   top: 0;
   left: 0;
@@ -322,55 +326,44 @@ header {
 }
 
 .slick-track:before,
-.slick-track:after
-{
+.slick-track:after {
   display: table;
-  content: '';
+  content: "";
 }
 
-.slick-track:after
-{
+.slick-track:after {
   clear: both;
 }
 
-.slick-loading .slick-track
-{
+.slick-loading .slick-track {
   visibility: hidden;
 }
 
-.slick-slide
-{
+.slick-slide {
   display: none;
   float: left;
   height: 100%;
   min-height: 1px;
 }
-[dir='rtl'] .slick-slide
-{
+[dir="rtl"] .slick-slide {
   float: right;
 }
-.slick-slide img
-{
+.slick-slide img {
   display: block;
 }
-.slick-slide.slick-loading img
-{
+.slick-slide.slick-loading img {
   display: none;
 }
-.slick-slide.dragging img
-{
+.slick-slide.dragging img {
   pointer-events: none;
 }
-.slick-initialized .slick-slide
-{
+.slick-initialized .slick-slide {
   display: block;
 }
-.slick-loading .slick-slide
-{
+.slick-loading .slick-slide {
   visibility: hidden;
 }
-.slick-vertical .slick-slide
-{
+.slick-vertical .slick-slide {
   display: block;
   height: auto;
   border: 1px solid transparent;
@@ -379,28 +372,31 @@ header {
   display: none;
 }
 
+/* ------------------- Icons -------------------- */
 .dev-icons {
   list-style: none;
   font-size: 1.5em;
   text-align: center;
 }
 
-.software-skill-inline, .social-icons-inline {
+.software-skill-inline,
+.social-icons-inline {
   display: inline-block;
   margin-right: 40px;
 }
 
-.social-icons{
+.social-icons {
   list-style: none;
   font-size: 1.8em;
   text-align: center;
 }
 
+/* ------------------- About Me Page CSS -------------------- */
 hr {
   width: 30%;
-  margin-left: auto !important; 
+  margin-left: auto !important;
   margin-right: auto !important;
-  height:20px;
+  height: 20px;
   border: 2px solid !important;
 }
 
@@ -408,9 +404,10 @@ hr {
   text-align: center;
 }
 
+/* ------------------- Footer -------------------- */
 footer {
   position: absolute;
-  width:100%;
+  width: 100%;
   height: 2.5rem;
 }
 
@@ -426,8 +423,14 @@ footer {
   color: rgb(179, 4, 4);
 }
 
+/* ------------------- Responsive -------------------- */
 @media (min-width: 1400px) {
-  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
     max-width: 1140px !important;
   }
 }
@@ -435,7 +438,7 @@ footer {
 @media (max-width: 990px) {
   .greeting h1 {
     font-size: 2em;
-  } 
+  }
   .greeting p {
     font-size: 1.1em;
   }
@@ -444,7 +447,7 @@ footer {
     font-size: 1em;
   }
   .contact .button {
-    font-size: .5em;
+    font-size: 0.5em;
     padding: 20px;
     margin-top: 25px;
   }
